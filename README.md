@@ -14,10 +14,10 @@ within the `tpm2-software-container` directory. For example:
 make
 
 # Build Ubuntu 20.04 image using Docker
-docker build -f ./ubuntu-20.04.docker
+docker build -f ./ubuntu-20.04.docker .
 
 # Build Fedora 32 image using Podman, squashing all intermediate layers together
-podman build --squash -f ./fedora-32.docker
+podman build --squash -f ./fedora-32.docker .
 ```
 
 The final output of the build will be an IMAGE ID which can be used to run the container image, for example:
